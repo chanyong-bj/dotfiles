@@ -47,7 +47,7 @@ if [[ $IS_LINUX -eq 1 ]]; then
 fi
 
 alias lsd="ls -ld *" # show directories
-alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+#alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias 'dirdus=du -sckx * | sort -nr' #directories sorted by size
 alias 'dus=du -kx | sort -nr | less' #files sorted by size
 
