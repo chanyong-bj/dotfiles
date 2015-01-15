@@ -38,6 +38,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 " Some snippets to get started
 Bundle "honza/vim-snippets"
+Bundle "derekwyatt/vim-scala"
 
 if has('autocmd')
   filetype plugin indent on    " enable plugins, detection and indenting
