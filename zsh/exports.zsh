@@ -8,7 +8,9 @@ typeset -U PATH
 
 # Set default console Java to 1.6
 if [[ $IS_MAC -eq 1 ]]; then
-    export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+    #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+    JAVA_HOME=`/usr/libexec/java_home`
+    export JAVA_HOME
 fi
 
 # Setup terminal, and turn on colors
