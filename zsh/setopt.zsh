@@ -41,3 +41,5 @@ setopt prompt_subst # Enable parameter expansion, command substitution, and arit
 # ===== Scripts and Functions
 setopt multios # perform implicit tees or cats when multiple redirections are attempted
 
+# ===== disable nomatch promotion
+setopt no_nomatch
