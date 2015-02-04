@@ -41,11 +41,14 @@ export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Virtual Environment Stuff
-export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+#export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/code/django
-if [[ $HAS_VIRTUALENV -eq 1 ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
+[ -f /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
+[ -f /etc/bash_completion.d/virtualenvwrapper ] && source /etc/bash_completion.d/virtualenvwrapper
+export PIP_VIRTUALENV_BASE=$HOME/.virtualenvs
+export PIP_RESPECT_VIRTUALENV=true
 
+# Scala config
 export SCALA_HOME=/usr/local/opt/scala/idea
 
