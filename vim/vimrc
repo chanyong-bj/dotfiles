@@ -1,9 +1,7 @@
 " .vimrc
-" Author: Mark Nichols <mark@zanshin.net>
-" Source: http://github.com/zanshin/dotfiles/vim/vimrc
 "
 " Preface ---------------------------------------------------------------- {{{
-" Forget compatibility with vi. Who cares.
+
 set nocompatible
 
 " Get SID prefix of vimrc (see :h <SID>)
@@ -15,7 +13,7 @@ endfunction
 " turn filetype on so that we can turn if off without generating an exit code
 " of 1 when quiting vim.
 filetype on                     " best to have it on before turning it off
-filetype off                    " needs to be off to setup Vundle
+" filetype off                    " needs to be off to setup Vundle
 set rtp+=~/.vim/bundle/vundle/  " add vundle to run time path
 call vundle#rc()
 
@@ -112,11 +110,11 @@ set formatoptions+=l              " don't break long lines that were already the
 " }}}
 " Navaigation and movement ----------------------------------------------- {{{
 
-" disable arrow keys and make semi-snarky comment. Get off my lawn
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+" disable arrow keys and make semi-snarky comment.
+" nnoremap <Left> :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up> :echoe "Use k"<CR>
+" nnoremap <Down> :echoe "Use j"<CR>
 
 " use <C>hjkl to switch between splits
 nnoremap <C-h> <C-w>h
@@ -178,10 +176,11 @@ silent! colorscheme landscape
 
 " }}}
 " Set tab stuff ---------------------------------------------------------- {{{
-set tabstop=2           " 2 spaces for a tab
-set shiftwidth=2        " 2 spaces for autoindenting
-set softtabstop=2       " when <BS>, pretend a tab is removed even if spaces
+set tabstop=4           " 4 spaces for a tab
+set shiftwidth=4        " 4 spaces for autoindenting
+set softtabstop=4       " when <BS>, pretend a tab is removed even if spaces
 set expandtab           " expand tabs to spaces (overloadable by file type)
+set smarttab
 
 " }}}
 " Scrolling -------------------------------------------------------------- {{{
@@ -220,9 +219,6 @@ imap jj <esc>
 
 " Highlight words to avoid in tech writing
 " =======================================
-"
-"   obviously, basically, simply, of course, clearly,
-"   just, everyone knows, However, So, easy
 "
 "   http://css-tricks.com/words-avoid-educational-writing/
 "   https://github.com/pengwynn/dotfiles/commit/12159ea233180344be4e25d57056ccd37061a153

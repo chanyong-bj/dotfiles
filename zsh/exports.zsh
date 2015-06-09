@@ -42,7 +42,7 @@ export LANG=en_US.UTF-8
 
 # Virtual Environment Stuff
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-#export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/code/django
 [ -f /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
 [ -f /etc/bash_completion.d/virtualenvwrapper ] && source /etc/bash_completion.d/virtualenvwrapper
