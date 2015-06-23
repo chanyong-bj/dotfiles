@@ -302,7 +302,7 @@ if has("autocmd")
   autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 
   " syntax of these languages is fussy over tabs Vs spaces
-  autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType make setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
   " treat .rss files as XML
@@ -333,7 +333,7 @@ if has("autocmd")
 
   " Python files
   let NERDTreeIgnore = ['\.pyc$', '\~$', '\.rbc$']
-  autocmd BufNewFile,BufRead *.py set ts=2 sts=2 sw=2 expandtab
+  autocmd BufNewFile,BufRead *.py set ts=4 sts=4 sw=4 expandtab
 
 endif
 
