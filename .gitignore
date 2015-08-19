@@ -13,3 +13,9 @@ vim/bundle
 
 # Ignore vim/tmp
 vim/tmp
+
+#
+zsh/cache
+
+#
+/sublimetext/User/*.pyc

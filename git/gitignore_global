@@ -83,8 +83,8 @@ project/plugins/project/
 
 # Xcode per-user config
 *.mode1
+     *.mode2v3
 *.mode1v3
-*.mode2v3
 *.perspective
 *.perspectivev3
 *.pbxuser
@@ -103,4 +103,7 @@ build/
 *~
 *.dat
 *.dep
+
+# Ptyhon
+*.py[cod]
 
