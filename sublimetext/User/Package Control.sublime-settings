@@ -1,30 +1,24 @@
 {
-	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
-		"Boron Color Scheme",
-		"DocBlockr",
-		"Dotfiles Syntax Highlighting",
-		"Emmet",
-		"Gist",
-		"Git",
-		"GitGutter",
-		"IndentGuides",
-		"MarkdownEditing",
+		"Alignment",
+		"Clipboard History",
+		"ConvertToUTF8",
+		"Fold Python",
+		"GBK Encoding Support",
+		"JsFormat",
+		"Markdown Preview",
 		"Package Control",
-		"Python Auto-Complete",
-		"Rake",
-		"Sass",
-		"SideBarEnhancements",
-		"Solarized Color Scheme",
-		"SublimeLinter",
-		"Theme - Flatland",
-		"Theme - Phoenix",
-		"Theme - Soda",
-		"Tmux",
-		"Tomorrow Color Schemes",
-		"Vagrant",
-		"WordCount"
-	]
+		"Pretty JSON",
+		"Pretty YAML",
+		"PythonTidy",
+		"Theme - Afterglow",
+		"Theme - Aqua",
+		"Theme - Soda"
+	],
+    "debug": true
 }

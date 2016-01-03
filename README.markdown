@@ -1,7 +1,8 @@
-This repository holds my configuration files so that I can clone them to other machines
-easily.
+This repository holds my configuration files (named as dotfiles).
 
-My primary OS is OS X (10.9.x) and some of these configurations are tuned to work on that platform. The `bash` files are more generic and friendly toward other Unix-based operating systems. 
+The primary OS platform is Mac OS X and some of these config files are tuned to work on that platform. 
+
+The `bash` files are more generic and friendly toward other Unix platforms. 
 
 #Installation
 
@@ -89,7 +90,16 @@ For machines where Sublime Text 2 cannot be installed, link
 tool rather than ST2.
 
 ## Sublime Text 2 (subl)
-Install Package Control following the instructions here: http://wbond.net/sublime_packages/package_control
+Install Package Control following the instructions here: [Package Control](https://packagecontrol.io/). 
+
+The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
+
+
+```
+import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')
+
+```
+
 
 For Sublime Text 2 settings, remove the `User` directory from
 `~/Library/Application Support/Sublime Text 2/Packages`. Then add this symlink:
