@@ -50,6 +50,10 @@ For ssh configuration, create the following symlink:
     ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 
 ## Vim
+If this is the first time setting up Vim on the machine, it will be necessary to install Vundle itself, prior to teh bundles.
+
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 For Vim configuration and use, create the following symlinks:
 
     ln -s ~/.dotfiles/vim ~/.vim
@@ -63,10 +67,6 @@ To install Vim bundles, which are managed via Vundle, via the command line run
 From inside of Vim run
 
     :BundleInstall
-
-If this is the first time setting up Vim on the machine, it will be necessary to install Vundle itself, prior to teh bundles.
-
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 ## bash
 For those machines where zsh isn't installed or won't easily work, create the
