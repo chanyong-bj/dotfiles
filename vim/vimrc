@@ -27,7 +27,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'benmills/vimux'
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'https://github.com/wincent/command-t.git'
 Bundle 'plasticboy/vim-markdown'
 " Bundle 'fholgado/minibufexpl.vim'
 " vim-snipmate requires vim-addon-mw-utils and tlib_vim

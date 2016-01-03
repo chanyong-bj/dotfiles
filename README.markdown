@@ -20,9 +20,9 @@ It is also possible to use `git pull` to update the submodules.
     $ cd ~/.dotfiles
     $ git submodule foreach git pull origin master
 
-Vundle managed Vim bundles maybe updated from the command line via
+~~Vundle managed Vim bundles maybe updated from the command line via~~
 
-    $ vim +BundleInstall +qall
+~~$ vim +BundleInstall +qall~~
 
 #Setup
 ## Homebrew
@@ -88,6 +88,19 @@ For machines where Sublime Text 2 cannot be installed, link
 `git/gitconfig_remote` instead. This will use `vimdiff` as the merge and diff
 tool rather than ST2.
 
+## Sublime Text 2 (subl)
+Install Package Control following the instructions here: http://wbond.net/sublime_packages/package_control
+
+For Sublime Text 2 settings, remove the `User` directory from
+`~/Library/Application Support/Sublime Text 2/Packages`. Then add this symlink:
+
+    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+    $ ln -s ~/.dotfiles/sublimetext/User User
+
+Finally, to enable the command line tool, `subl`, add this symlink:
+
+    $ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
 ## Mercurial (hg)
 For Mercurial configuration and global ignore files, create these symlinks:
 
@@ -116,19 +129,6 @@ Setup `tmuxinator` by installing it's gem
 And link in the directory containing the YML files for the `mux` command.
 
     $ ln -s ~/.dotfiles/tmux/tmuxinator ~/.tmuxinator
-
-## Sublime Text 2 (subl)
-Install Package Control following the instructions here: http://wbond.net/sublime_packages/package_control
-
-For Sublime Text 2 settings, remove the `User` directory from
-`~/Library/Application Support/Sublime Text 2/Packages`. Then add this symlink:
-
-    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    $ ln -s ~/.dotfiles/sublimetext/User User
-
-Finally, to enable the command line tool, `subl`, add this symlink:
-
-    $ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 ##z
 To enable z directory function from https://github.com/rupa/z, source the
