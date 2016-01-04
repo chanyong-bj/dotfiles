@@ -18,4 +18,5 @@ vim/tmp
 zsh/cache
 
 #
+/sublimetext/User/Package\ Control.cache/*
 /sublimetext/User/*.pyc
