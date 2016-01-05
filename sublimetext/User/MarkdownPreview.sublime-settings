@@ -1,0 +1,14 @@
+/*
+    Markdown Preview settings
+*/
+{
+    /*
+        Enable or not mathjax support.
+    */
+    "enable_mathjax": true,
+
+    /*
+        Enable highlighting. This enables codehilite extension if not already enabled.
+    */
+    "enable_highlight": true
+}
