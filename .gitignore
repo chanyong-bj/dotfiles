@@ -20,3 +20,4 @@ zsh/cache
 #
 /sublimetext/User/Package\ Control.cache/*
 /sublimetext/User/*.pyc
+/sublimetext/User/encoding_cache.json
