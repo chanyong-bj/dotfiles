@@ -1,8 +1,6 @@
 " .vimrc
 "
-" Preface ---------------------------------------------------------------- {{{
-
-set nocompatible
+" Preface ---------------------------------------------------------------- {{{ set nocompatible
 
 " Get SID prefix of vimrc (see :h <SID>)
 function! s:SID_PREFIX()
@@ -17,26 +15,29 @@ filetype on                     " best to have it on before turning it off
 set rtp+=~/.vim/bundle/vundle/  " add vundle to run time path
 call vundle#rc()
 
-" let Vundle manage Vundle
+" Bundles from github
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'itchyny/landscape.vim'
-Bundle 'git://github.com/sjl/badwolf.git'
-" Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'benmills/vimux'
-Bundle 'https://github.com/wincent/command-t.git'
 Bundle 'plasticboy/vim-markdown'
-" Bundle 'fholgado/minibufexpl.vim'
-" vim-snipmate requires vim-addon-mw-utils and tlib_vim
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
-" Some snippets to get started
 Bundle "honza/vim-snippets"
 Bundle "derekwyatt/vim-scala"
+
+Bundle 'git://github.com/sjl/badwolf.git'
+Bundle 'https://github.com/wincent/command-t.git'
+
+" disabled bundles
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'fholgado/minibufexpl.vim'
+" vim-snipmate requires vim-addon-mw-utils and tlib_vim
+
 
 if has('autocmd')
   filetype plugin indent on    " enable plugins, detection and indenting
@@ -116,7 +117,7 @@ set formatoptions+=l              " don't break long lines that were already the
 " nnoremap <Up> :echoe "Use k"<CR>
 " nnoremap <Down> :echoe "Use j"<CR>
 
-" use <C>hjkl to switch between splits
+" use <C>hjkl to switch between splits windows
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -383,7 +384,7 @@ endif
 let g:netrw_liststyle=3
 
 " }}}
-" Stuff for Bundles ------------------------------------------------------ {{{
+" Settings for Bundles ------------------------------------------------------ {{{
 
 " Command-t
 nmap <leader>t :CommandT <CR>
