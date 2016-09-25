@@ -3,21 +3,28 @@
 	"debug": true,
 	"in_process_packages":
 	[
+		"Package Control"
 	],
 	"installed_packages":
 	[
 		"Alignment",
+		"Auto Hide Sidebar",
+		"AutoPEP8",
 		"Clipboard History",
 		"ConvertToUTF8",
 		"Fold Python",
 		"GBK Encoding Support",
+		"Indent XML",
 		"JsFormat",
 		"Markdown Preview",
-		"MarkdownEditing",
+		"Monokai Extended",
+		"One Dark Material - Theme",
 		"Package Control",
 		"Pretty JSON",
 		"Pretty YAML",
 		"PythonTidy",
+		"SublimeCodeIntel",
+		"Terminal",
 		"Theme - Afterglow",
 		"Theme - Aqua",
 		"Theme - Soda"
