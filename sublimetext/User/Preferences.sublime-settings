@@ -1,9 +1,8 @@
 {
 	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-	"font_size": 12.0,
+	"font_size": 11.0,
 	"ignored_packages":
 	[
-		"Package Control",
 		"Vintage"
 	],
 	"theme": "Soda Dark.sublime-theme"

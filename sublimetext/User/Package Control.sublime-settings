@@ -3,7 +3,6 @@
 	"debug": true,
 	"in_process_packages":
 	[
-		"Package Control"
 	],
 	"installed_packages":
 	[
