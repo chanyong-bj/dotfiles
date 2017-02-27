@@ -21,9 +21,6 @@ It is also possible to use `git pull` to update the submodules.
     $ cd ~/.dotfiles
     $ git submodule foreach git pull origin master
 
-~~Vundle managed Vim bundles maybe updated from the command line via~~
-
-~~$ vim +BundleInstall +qall~~
 
 #Setup
 ## Homebrew
@@ -69,14 +66,6 @@ From inside of Vim run
 
     :BundleInstall
 
-## bash
-For those machines where zsh isn't installed or won't easily work, create the
-following symlinks:
-
-    $ ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
-    $ ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
-    $ ln -s ~/.dotfiles/bash/bash_aliases ~/.bash_aliases
-    $ ln -s ~/.dotfiles/bash/bash_history ~/.bash_history
 
 ## Git
 For Git configuration and global ignore files, create these symlinks:
@@ -85,9 +74,14 @@ For Git configuration and global ignore files, create these symlinks:
     $ ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
     $ git config --global core.excludesfile ~/.gitignore_global
 
-For machines where Sublime Text 2 cannot be installed, link
-`git/gitconfig_remote` instead. This will use `vimdiff` as the merge and diff
-tool rather than ST2.
+## bash
+For those machines where zsh isn't installed or won't easily work, create the
+following symlinks:
+
+    $ ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
+    $ ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
+    $ ln -s ~/.dotfiles/bash/bash_aliases ~/.bash_aliases
+    $ ln -s ~/.dotfiles/bash/bash_history ~/.bash_history
 
 ## Sublime Text 2 (subl)
 Install Package Control following the instructions here: [Package Control](https://packagecontrol.io/). 
