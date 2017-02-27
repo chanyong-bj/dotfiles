@@ -81,7 +81,6 @@ following symlinks:
     $ ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
     $ ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
     $ ln -s ~/.dotfiles/bash/bash_aliases ~/.bash_aliases
-    $ ln -s ~/.dotfiles/bash/bash_history ~/.bash_history
 
 ## Sublime Text 2 (subl)
 Install Package Control following the instructions here: [Package Control](https://packagecontrol.io/). 
